@@ -6,7 +6,7 @@ const Header = () => {
       <div class="page-title home text-center">
         <h2>
           Aakash <span class="primary">Bansal</span>{" "}
-          <span class="title-bg">David</span>
+          <span class="title-bg">Aakash</span>
         </h2>
         <p>
           A product designer from England, who focuses on interactive design
