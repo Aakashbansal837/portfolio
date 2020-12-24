@@ -1,6 +1,6 @@
 import React from "react";
 
-const Hexagon = ({ title }) => {
+const Hexagon = ({ runLoader, title, icon, url }) => {
   return (
     <>
       <div className="hexagon-item">
@@ -14,12 +14,12 @@ const Hexagon = ({ title }) => {
           <div></div>
           <div></div>
         </div>
-        <a href="welcome.html" className="hex-content">
+        <a href={url} className="hex-content" onClick={() => runLoader()}>
           <span className="hex-content-inner">
             <span className="icon">
-              <i className="tf-dial"></i>
+              <i className={icon}></i>
             </span>
-            <span className="title">{title ? title : "none"}</span>
+            <span className="title">{title}</span>
           </span>
           <svg
             viewBox="0 0 173.20508075688772 200"
