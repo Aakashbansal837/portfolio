@@ -1,13 +1,13 @@
 import React from "react";
 
-const Preloader = () => {
+const Preloader = ({ loadClass }) => {
   return (
-    <div class="preloader">
-      <div class="loading-mask"></div>
-      <div class="loading-mask"></div>
-      <div class="loading-mask"></div>
-      <div class="loading-mask"></div>
-      <div class="loading-mask"></div>
+    <div className={"preloader " + loadClass}>
+      <div className="loading-mask"></div>
+      <div className="loading-mask"></div>
+      <div className="loading-mask"></div>
+      <div className="loading-mask"></div>
+      <div className="loading-mask"></div>
     </div>
   );
 };
