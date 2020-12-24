@@ -3,10 +3,10 @@ import React from "react";
 const Header = () => {
   return (
     <>
-      <div class="page-title home text-center">
+      <div className="page-title home text-center">
         <h2>
-          Aakash <span class="primary">Bansal</span>{" "}
-          <span class="title-bg">Aakash</span>
+          Aakash <span className="primary">Bansal</span>{" "}
+          <span className="title-bg">Aakash</span>
         </h2>
         <p>
           A product designer from England, who focuses on interactive design

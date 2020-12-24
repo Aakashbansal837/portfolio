@@ -3,23 +3,23 @@ import React from "react";
 const Hexagon = ({ title }) => {
   return (
     <>
-      <div class="hexagon-item">
-        <div class="hex-item">
+      <div className="hexagon-item">
+        <div className="hex-item">
           <div></div>
           <div></div>
           <div></div>
         </div>
-        <div class="hex-item">
+        <div className="hex-item">
           <div></div>
           <div></div>
           <div></div>
         </div>
-        <a href="welcome.html" class="hex-content">
-          <span class="hex-content-inner">
-            <span class="icon">
-              <i class="tf-dial"></i>
+        <a href="welcome.html" className="hex-content">
+          <span className="hex-content-inner">
+            <span className="icon">
+              <i className="tf-dial"></i>
             </span>
-            <span class="title">{title ? title : "none"}</span>
+            <span className="title">{title ? title : "none"}</span>
           </span>
           <svg
             viewBox="0 0 173.20508075688772 200"
