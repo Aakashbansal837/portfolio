@@ -1,11 +1,16 @@
 import React from "react";
 
-const SiteWrapper = () => {
+const SiteWrapper = ({ setTheme }) => {
+  const [open, setOpen] = React.useState("");
+
   return (
-    <div className="preview-wrapper">
+    <div className={"preview-wrapper " + open}>
       <div className="switcher-head">
         <span>Style Switcher</span>
-        <div className="switcher-trigger tf-tools"></div>
+        <div
+          className="switcher-trigger tf-tools"
+          onClick={() => setOpen(open === "" ? "extend" : "")}
+        ></div>
       </div>
 
       <div className="switcher-body">
