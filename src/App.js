@@ -12,7 +12,7 @@ import PowerSwitch from "./components/PowerSwitch";
 export default function App() {
   const [mode, setmode] = React.useState(constants.mode);
   const [theme, setTheme] = React.useState(constants.themeColor);
-  const [loader, setLoader] = React.useState("");
+  const [loader, setLoader] = React.useState("active");
 
   useEffect(() => {
     runLoader();
