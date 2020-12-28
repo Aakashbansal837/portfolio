@@ -6,14 +6,22 @@ import Home from "./components/Home";
 import Preloader from "./components/Preloader";
 import SiteWrapper from "./components/SiteWrapper";
 import Background from "./images/banner.jpg";
+import constants from "./constants/index";
+import PowerSwitch from "./components/PowerSwitch";
 
 export default function App() {
-  const [theme, setTheme] = React.useState("black");
+  const [mode, setmode] = React.useState(constants.mode);
+  const [theme, setTheme] = React.useState(constants.themeColor);
   const [loader, setLoader] = React.useState("");
 
   useEffect(() => {
     runLoader();
   }, []);
+
+  const changeTheme = (color) => {
+    alert(color);
+    setTheme(color);
+  };
 
   const runLoader = () => {
     setLoader("");
@@ -25,9 +33,10 @@ export default function App() {
     }, 2000);
   };
   return (
-    <div className={theme}>
+    <div className={mode}>
       <Preloader loadClass={loader} />
-      <SiteWrapper />
+      <PowerSwitch setmode={setmode} />
+      <SiteWrapper setTheme={changeTheme} />
       <div className="site-wrapper">
         <div className="pt-table">
           <div
