@@ -823,16 +823,19 @@
   cursor: pointer;
 }
 .color-options li.c0 {
-  background-color: #fa6862;
+  background-color: $theme-red;
 }
 .color-options li.c1 {
-  background-color: #02b7ce;
+  background-color: $theme-blue;
 }
 .color-options li.c2 {
-  background-color: #86a438;
+  background-color: $theme-green;
 }
 .color-options li.c3 {
-  background-color: #f3a36d;
+  background-color: $theme-orange;
+}
+.color-options li.c4 {
+  background-color: $theme-yellow;
 }
 .pattern-options li {
   font-family: "Roboto", sans-serif;
