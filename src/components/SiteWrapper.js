@@ -42,11 +42,19 @@ const SiteWrapper = ({ setTheme }) => {
           </li>
           <li
             className="c3"
+            data-color="orange"
+            onClick={() => setTheme("Orange")}
+            title="Orange"
+          >
+            Orange
+          </li>
+          <li
+            className="c4"
             data-color="yellow"
             onClick={() => setTheme("yellow")}
-            title="Blue"
+            title="Yellow"
           >
-            Blue
+            Yellow
           </li>
         </ul>
       </div>
