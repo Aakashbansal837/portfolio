@@ -4,13 +4,11 @@ const PowerSwitch = ({ setmode }) => {
   return (
     <div className="power-main">
       <div className="power-switch">
-        <label className="d-none">
-          <input
-            id="userMode"
-            type="checkbox"
-            onChange={(e) => setmode(e.target.checked ? "white" : "dark")}
-          />
-        </label>
+        <input
+          type="checkbox"
+          onChange={(e) => setmode(e.target.checked ? "white" : "dark")}
+        />
+
         <div className="button">
           <svg className="power-off">
             <use xlinkHref="#line" className="line" />
