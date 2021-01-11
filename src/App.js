@@ -25,12 +25,7 @@ export default function App() {
     }, 1000);
   };
   const changeTheme = (color) => {
-    // console.log(
-    //   "thems :",
-    //   constants.themeColors[color],
-    //   constants.themeColors,
-    //   color
-    // );
+    console.log("thems :", color);
     setTheme(color);
   };
 
