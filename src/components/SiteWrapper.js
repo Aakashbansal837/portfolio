@@ -43,7 +43,7 @@ const SiteWrapper = ({ setTheme }) => {
           <li
             className="c3"
             data-color="orange"
-            onClick={() => setTheme("Orange")}
+            onClick={() => setTheme("orange")}
             title="Orange"
           >
             Orange
