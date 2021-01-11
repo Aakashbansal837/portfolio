@@ -15,22 +15,31 @@ export default function App() {
   const [loader, setLoader] = React.useState("active");
 
   useEffect(() => {
-    runLoader();
     let color = window.sessionStorage.getItem("theme");
+    let mode = window.sessionStorage.getItem("mode");
     if (!color) {
       window.sessionStorage.setItem("theme", "red");
+      setmode("red");
+    } else {
+      setTheme(color);
     }
-    setTheme(color);
+    if (!mode) {
+      window.sessionStorage.setItem("mode", "dark");
+      setmode("dark");
+    } else {
+      setmode(mode);
+    }
+    runLoader();
   }, []);
 
   const changeMode = (color) => {
     constants.mode = color;
+    window.sessionStorage.setItem("mode", color);
     setTimeout(() => {
       setmode(color);
     }, 1000);
   };
   const changeTheme = (color) => {
-    console.log("thems :", color);
     setTheme(color);
     window.sessionStorage.setItem("theme", color);
   };
