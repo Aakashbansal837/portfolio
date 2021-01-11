@@ -16,6 +16,11 @@ export default function App() {
 
   useEffect(() => {
     runLoader();
+    let color = window.sessionStorage.getItem("theme");
+    if (!color) {
+      window.sessionStorage.setItem("theme", "red");
+    }
+    setTheme(color);
   }, []);
 
   const changeMode = (color) => {
@@ -27,6 +32,7 @@ export default function App() {
   const changeTheme = (color) => {
     console.log("thems :", color);
     setTheme(color);
+    window.sessionStorage.setItem("theme", color);
   };
 
   const runLoader = () => {
