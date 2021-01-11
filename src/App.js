@@ -11,9 +11,7 @@ import PowerSwitch from "./components/PowerSwitch";
 
 export default function App() {
   const [mode, setmode] = React.useState(constants.mode);
-  const [theme, setTheme] = React.useState(
-    "./styles/colors/" + constants.themeColor + ".scss"
-  );
+  const [theme, setTheme] = React.useState(constants.themeColor);
   const [loader, setLoader] = React.useState("active");
 
   useEffect(() => {
@@ -21,13 +19,19 @@ export default function App() {
   }, []);
 
   const changeMode = (color) => {
+    constants.mode = color;
     setTimeout(() => {
       setmode(color);
     }, 1000);
   };
   const changeTheme = (color) => {
-    alert(color);
-    setTheme("./styles/colors/" + color + ".scss");
+    // console.log(
+    //   "thems :",
+    //   constants.themeColors[color],
+    //   constants.themeColors,
+    //   color
+    // );
+    setTheme(color);
   };
 
   const runLoader = () => {
@@ -40,8 +44,7 @@ export default function App() {
     }, 2000);
   };
   return (
-    <div className={mode}>
-      <link rel="stylesheet" href={theme} />
+    <div className={mode + " " + theme}>
       <Preloader loadClass={loader} />
       <PowerSwitch setmode={changeMode} />
       <SiteWrapper setTheme={changeTheme} />
