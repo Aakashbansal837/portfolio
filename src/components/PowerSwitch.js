@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const PowerSwitch = ({ setmode }) => {
   return (
@@ -6,6 +6,9 @@ const PowerSwitch = ({ setmode }) => {
       <div className="power-switch">
         <input
           type="checkbox"
+          checked={
+            window.sessionStorage.getItem("mode") === "dark" ? false : true
+          }
           onChange={(e) => setmode(e.target.checked ? "white" : "dark")}
         />
 
