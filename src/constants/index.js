@@ -10,7 +10,7 @@
 // };
 const constants = {
   mode: "dark", // this will alter between day (white)  and night(black)
-  themeColor: "blue", // can have variour options
+  themeColor: "red", // can have variour options
   // themeColors: themeColors,
 };
 
