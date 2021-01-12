@@ -8,6 +8,7 @@ import SiteWrapper from "./components/SiteWrapper";
 import Background from "./images/banner.jpg";
 import constants from "./constants/index";
 import PowerSwitch from "./components/PowerSwitch";
+import Error404 from "./components/Error/Error404";
 
 export default function App() {
   const [mode, setmode] = React.useState(constants.mode);
@@ -62,15 +63,18 @@ export default function App() {
         <div className="pt-table">
           <div
             className="pt-tablecell page-home relative"
-            style={{ backgroundImage: "url(" + { Background } + ")" }}
+            style={{ backgroundImage: "url(" + Background + ")" }}
           >
             <div className="overlay"></div>
             <div className="container">
               <div className="row">
                 <Router>
                   <Switch>
-                    <Route path="/">
+                    <Route exact path="/">
                       <Home />
+                    </Route>
+                    <Route>
+                      <Error404 />
                     </Route>
                   </Switch>
                 </Router>
