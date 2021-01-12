@@ -1,8 +1,23 @@
-// @import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+// bootstrap 4.5
 @import "../../node_modules/bootstrap-scss/bootstrap.scss";
+
+// Import Variables
+@import "parts/variables";
+
+// Import Mixins
+@import "parts/mixins";
+
+// Import Base styles
+@import "parts/base";
+
+//  min css
 @import "./owl.carousel.css";
 @import "./themefisher-fonts.min.css";
+
+// animate
 @import "./animate.scss";
+
+// component styling
 @import "./main.scss";
 @import "./dark.scss";
 @import "./colors/index.scss";
