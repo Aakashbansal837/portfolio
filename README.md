@@ -1,4 +1,4 @@
-# http://aakashbansal837.github.io/
+# aakashbansal837.github.io
 
 main profile Readme.
 
