@@ -36,9 +36,7 @@ export default function App() {
   const changeMode = (color) => {
     constants.mode = color;
     window.sessionStorage.setItem("mode", color);
-    setTimeout(() => {
-      setmode(color);
-    }, 1000);
+    setmode(color);
   };
   const changeTheme = (color) => {
     setTheme(color);
