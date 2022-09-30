@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./style/index.scss";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/Home";
 import Preloader from "./components/Preloader";
 import SiteWrapper from "./components/SiteWrapper";
@@ -54,6 +54,17 @@ export default function App() {
       setLoader("active done");
     }, 2000);
   };
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path : '*',
+      element: <Error404 />
+    }
+  ]);
+
   return (
     <div className={mode + " " + theme}>
       <Preloader loadClass={loader} />
@@ -68,16 +79,7 @@ export default function App() {
             <div className="overlay"></div>
             <div className="container">
               <div className="row">
-                <Router>
-                  <Switch>
-                    <Route exact path="/">
-                      <Home />
-                    </Route>
-                    <Route>
-                      <Error404 />
-                    </Route>
-                  </Switch>
-                </Router>
+              <RouterProvider router={router} />
               </div>
             </div>
           </div>
