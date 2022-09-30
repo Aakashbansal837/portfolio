@@ -1,24 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.7778ede8.chunk.css",
-    "main.js": "/static/js/main.124a79a4.chunk.js",
-    "main.js.map": "/static/js/main.124a79a4.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.4c81911e.js",
-    "runtime-main.js.map": "/static/js/runtime-main.4c81911e.js.map",
-    "static/js/2.d375a881.chunk.js": "/static/js/2.d375a881.chunk.js",
-    "static/js/2.d375a881.chunk.js.map": "/static/js/2.d375a881.chunk.js.map",
-    "static/js/3.b235ef66.chunk.js": "/static/js/3.b235ef66.chunk.js",
-    "static/js/3.b235ef66.chunk.js.map": "/static/js/3.b235ef66.chunk.js.map",
+    "main.css": "/static/css/main.9b89eae5.css",
+    "main.js": "/static/js/main.49227b39.js",
+    "static/js/496.01383bac.chunk.js": "/static/js/496.01383bac.chunk.js",
+    "static/media/themefisher-font.svg?ug5hnh": "/static/media/themefisher-font.9be820e6fe5710738866.svg",
+    "static/media/themefisher-font.eot?ug5hnh": "/static/media/themefisher-font.eaab8c237d0ea57b57d0.eot",
+    "static/media/themefisher-font.woff?ug5hnh": "/static/media/themefisher-font.6af258e400caadccec9a.woff",
+    "static/media/themefisher-font.ttf?ug5hnh": "/static/media/themefisher-font.611b076f2f3193550f07.ttf",
+    "static/media/banner.jpg": "/static/media/banner.0ac8dc9f8177e2963099.jpg",
     "index.html": "/index.html",
-    "static/css/main.7778ede8.chunk.css.map": "/static/css/main.7778ede8.chunk.css.map",
-    "static/js/2.d375a881.chunk.js.LICENSE.txt": "/static/js/2.d375a881.chunk.js.LICENSE.txt",
-    "static/media/banner.0ac8dc9f.jpg": "/static/media/banner.0ac8dc9f.jpg",
-    "static/media/index.scss": "/static/media/themefisher-font.eaab8c23.eot"
+    "main.9b89eae5.css.map": "/static/css/main.9b89eae5.css.map",
+    "main.49227b39.js.map": "/static/js/main.49227b39.js.map",
+    "496.01383bac.chunk.js.map": "/static/js/496.01383bac.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.4c81911e.js",
-    "static/js/2.d375a881.chunk.js",
-    "static/css/main.7778ede8.chunk.css",
-    "static/js/main.124a79a4.chunk.js"
+    "static/css/main.9b89eae5.css",
+    "static/js/main.49227b39.js"
   ]
 }
