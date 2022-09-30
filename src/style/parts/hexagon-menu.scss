@@ -1,0 +1,19 @@
+
+@media only screen and (min-width: 1400px) {
+    .hexagon-menu-row > div {
+        width: 57%;
+    }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .hexagon-menu-row > div {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 992px) {
+    .hexagon-menu-row > div {
+        width: 80%;
+    }
+}

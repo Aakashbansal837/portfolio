@@ -4,7 +4,7 @@ import Hexagon from "./Hexagon";
 
 const Home = () => {
   return (
-    <>
+    <div className="hexagon-menu-row">
       <div className="col-xs-12 col-sm-12 col-md-10 col-lg-8 center">
         <Header />
         <div className="hexagon-menu clear">
@@ -17,7 +17,7 @@ const Home = () => {
           <Hexagon title="contact" icon="tf-envelope2" url="/" />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
