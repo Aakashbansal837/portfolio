@@ -75,7 +75,7 @@ export default function App() {
             className="pt-tablecell page-home relative"
             style={{ backgroundImage: "url(" + Background + ")" }}
           >
-            <div className="overlay"></div>
+            <div className="overlay" />
             <div className="container">
               <div className="row">
               <RouterProvider router={router} />
