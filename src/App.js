@@ -56,6 +56,7 @@ export default function App() {
     {
       path: "/",
       element: <Home />,
+      errorElement: <Error404 />,
     },
     {
       path : '*',
