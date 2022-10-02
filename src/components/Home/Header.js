@@ -9,8 +9,8 @@ const Header = () => {
           <span className="title-bg">Aakash</span>
         </h2>
         <p>
-          a full stack web developer, who focuses on responsive and interactive
-          designs &amp; a part time freelance web developer.
+          I'm a Software Engineer from India, who focuses on user friendly,
+          interactive design Implementations &amp; clean interfaces.
         </p>
       </div>
     </>
