@@ -80,7 +80,11 @@
     text-transform: uppercase;
   }
   p {
-    font-size: 16px;
+    font-size: 20px;
+    // font-weight: 600;
+    font-family: $open-sans;
+    position: relative;
+    color: rgba($light-dark, 0.47);
   }
   .title-bg {
     color: rgba($light-dark, 0.07);

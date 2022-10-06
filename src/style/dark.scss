@@ -1,16 +1,17 @@
-$light-dark: #1e2530;
-
 .dark {
 	background-color: #0c0f15;
 	.page-home .overlay {
-	  	background-color: rgba(#0e1118, 0.97);
+	  	background-color: rgba(#0e1118, $overlay-bg-opacity-dark);
 	}
 	.page-title {
 		h2 {
 	  		color: #ffffff;
 	  	}
+		p {
+			color: rgba($light, 0.27) ;
+		}
 	  	.title-bg {
-	  		color: rgba(#46587c, 0.06);
+	  		color: rgba(#46587c, 0.09);
 	  	}
 	}
 	.section-title h3::before {
@@ -32,6 +33,6 @@ $light-dark: #1e2530;
 	}
 	.testimonials .text,
 	.btn-border {
-	  	border-color: #1e2530;
+	  	border-color: $light-dark;
 	}
 }
